@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #080808;
+  color: #fff;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images111/background.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+.navbar {
+  padding: 1rem 3%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 8rem;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #e5ecec;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #140409;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.personal {
+  margin-top: 20%;
+  font-size: 2rem;
+}
+.personal h1 span {
+  color: #383131;
+}
+
+.about {
+  padding: 80px 0;
+  color: #fff;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 img {
+  flex-basis: 35%;
+  padding-left: 1rem;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.about-col-2 p {
+  font-size: 1.5rem;
+  padding-right: 3rem;
+}
+.aboutme {
+  padding-bottom: 2rem;
+  font-size: 60px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.skills {
+  margin: 20px 0 40px;
+}
+.skills .education .exprience h2 {
+  margin-right: 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.services {
+  padding: 30px 0;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.service-list div {
+  background-color: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.service-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.service-list div:hover {
+  background-color: #ff004f;
+  transform: translateY(-10px);
+}
+
+.project {
+  padding: 50px 0;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.deploy {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 15px;
+  transition: height 0.5s;
+}
+.deploy h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.deploy a {
+  margin-top: 5rem;
+  color: #2b141b;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .deploy {
+  height: 100%;
+}
+.containercontact {
+  padding: 5px 10px 5px 10px;
+  border: 2px white solid;
+  font-size: 1.8rem;
+}
+.contact {
+  font-size: 2.5rem;
+}
+
+.left {
+  flex-basis: 35%;
+}
+.right {
+  flex-basis: 65%;
+}
+.left p {
+  margin-top: 30px;
+}
+.left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.icon {
+  margin-top: 30px;
+}
+.icon a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #f3e1e1;
+  display: inline-block;
+}
+.right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #ff004f;
+  width: 25%;
+  background-color: #ff004f;
+  height: 2.5rem;
+  font-size: 20px;
+}
+.cv {
+  width: 25%;
+  height: 2.5rem;
+  border: 5px rgb(90, 73, 73) solid;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.cv a {
+  text-decoration: none;
+  padding: 0 auto;
+  color: rgb(29, 25, 25);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .personal p {
+    font-size: 1.5rem;
+  }
+  .personal h1 {
+    color: rgb(92, 74, 74);
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header {
+    height: 50%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-col-1 img {
+    margin: 0 auto;
+  }
+  .about-col-2 p {
+    border: 2px white solid;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(64, 70, 70);
+  }
+  .aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: underline;
+    border: 2px white solid;
+    background-color: rgb(64, 70, 70);
+    padding-bottom: 10px;
+  }
+  .education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: underline;
+    border: 2px white solid;
+    background-color: rgb(64, 70, 70);
+    padding-bottom: 10px;
+  }
+  .education li {
+    text-align: left;
+  }
+  .container {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
